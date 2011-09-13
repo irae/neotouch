@@ -212,7 +212,7 @@ td { vertical-align: top; }
    Author: daniel filho, fabio dan & irae carvalho
    ========================================================================== */
 	*											{ font-family:"Varela Round", sans-serif; }
-	body									{ background:#FFF; }
+	body									{ background:#FFF; margin:0; padding:0; }
 	header								{ position:fixed; top:0; width:200px; height:100px; text-align:center; background:#FFF; }
 	header h1							{ padding-top:20px; }
 	header h1 a,
@@ -239,7 +239,7 @@ td { vertical-align: top; }
 	h3 span, h4 span			{ color:#CCC; }
 
 	.areas								{ padding:0; background:#FFF; }
-	.areas section				{ padding-left:260px; }
+	.areas section				{ padding:0 0 0 260px; margin:0; }
 
 	section.home					{ background:#FFF; }
 	.home p								{ font-family:"Varela Round"; }
@@ -254,7 +254,10 @@ td { vertical-align: top; }
 	section.use						{ background:rgba(0, 0, 0, .7); }
 	section.credits				{ background:rgba(0, 0, 0, .9); }
 
-	section p							{ display:block; padding-top:20px; font:normal 22px "Coustard", serif; }
+	section p							{ display:block; margin:0; padding-top:40px; font:normal 22px "Coustard", serif; letter-spacing:1px; }
+
+
+
 
 /*	* { background:rgba(255,0,0,.3); }
 */
