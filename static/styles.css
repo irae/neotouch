@@ -43,8 +43,8 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #990000; color: #fff; text-shadow: none; }
-::selection { background: #990000; color: #fff; text-shadow: none; }
+::-moz-selection { background:green; color:yellow; text-shadow: none; }
+::selection { background:green; color:yellow; text-shadow: none; }
 
 
 /* =============================================================================
@@ -222,7 +222,7 @@ td { vertical-align: top; }
 	menu li								{ list-style:none outside; padding:0; margin:0; }
 	menu li a,
 	menu li a:visited			{ display:block; list-style:none; padding:10px 10px; letter-spacing:1px; text-transform:uppercase; text-decoration:none; color:#FFF; }
-	menu li a:hover				{ color:rgb(200,0,0); 
+	menu li a:hover				{ cursor:pointer; color:rgb(200,0,0);
 													-webkit-transition: all .2s linear;
 													   -moz-transition: all .2s linear;
 													     -o-transition: all .2s linear;
@@ -233,19 +233,20 @@ td { vertical-align: top; }
 	menu a.how						{ background:rgba(0, 0, 0, .5); }
 	menu a.use						{ background:rgba(0, 0, 0, .7); }
 	menu a.credits				{ background:rgba(0, 0, 0, .9); }
+	menu a:active					{ padding-left:20px; }
 
 	h1, h2, h3, h4				{ font-weight:bold; text-transform:uppercase; color:#333; }
 	h1 span, h2 span
 	h3 span, h4 span			{ color:#CCC; }
 
 	.areas								{ padding:0; background:#FFF; }
-	.areas section				{ padding:0 0 0 260px; margin:0; }
+	.areas section				{ padding:0 30px 0 260px; }
 
 	section.home					{ background:#FFF; }
 	.home p								{ font-family:"Varela Round"; }
-	.home p.slogan				{ margin-top:50px; font-size:120px; line-height:120px; text-transform:lowercase; }
+	.home p.slogan				{ margin-top:30px; font-size:120px; line-height:120px; text-transform:lowercase; }
 	.home p.slogan span		{ color:rgb(200,0,0); letter-spacing:30px; }
-	
+
 	section.use p,
 	section.credits p			{ color:#CCC; }
 
@@ -254,9 +255,48 @@ td { vertical-align: top; }
 	section.use						{ background:rgba(0, 0, 0, .7); }
 	section.credits				{ background:rgba(0, 0, 0, .9); }
 
-	section p							{ display:block; margin:0; padding-top:40px; font:normal 22px "Coustard", serif; letter-spacing:1px; }
+	section p							{ display:block; margin:0; padding-top:40px; font:normal 28px "Coustard", serif; letter-spacing:1px; }
 
+	section.use 
+		.bookmarklet a			{ display:block; width:150px; padding:10px; font:normal 16px "Varela Round", sans-serif; border:1px solid #333; border-radius:5px; box-shadow:0 0 4px #CCC; text-align:center; color:#333; text-shadow:0 0 1px #CCC; text-decoration:none;
+													background-image: -webkit-gradient(
+															linear,
+															left bottom,
+															left top,
+															color-stop(0, #666666),
+															color-stop(1, #CCCCCC)
+													);
+													background-image: -moz-linear-gradient(
+															center bottom,
+															#666666 0,
+															#CCCCCC 100%
+													);
+												}
+	section.use 
+		.bookmarklet a:hover{
+													background-image: -webkit-gradient(
+															linear,
+															left bottom,
+															left top,
+															color-stop(0, #CCCCCC),
+															color-stop(1, #666666)
+													);
+													background-image: -moz-linear-gradient(
+															center bottom,
+															#CCCCCC 0,
+															#666666 100%
+													);
+												}
+	section.use 
+		.bookmarklet a:active{ border:1px solid #000; }
 
+	section.credits ul, 
+	section.credits li		{ list-style:none; padding:0; margin:0; font:normal 16px "Coustard"; color:#CCC; margin:10px 0; }
+	section.credits li:before{
+		list-style:none;
+		content:"— ";
+	}
+	section.credits ul		{ margin-top:30px; }
 
 
 /*	* { background:rgba(255,0,0,.3); }
