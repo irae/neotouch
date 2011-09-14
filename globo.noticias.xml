@@ -5,7 +5,6 @@
 		<description>Gets content from a single Globo news page.</description>
 		<documentationURL/>
 		<sampleQuery>select * from {table} where page="http://g1.globo.com/tecnologia/noticia/2011/09/pnbl-deve-chegar-150-cidades-em-2011-diz-presidente-da-telebras.html"</sampleQuery>
-		<sampleQuery>select * from {table} where query="sao paulo" and state="SP"</sampleQuery>
 	</meta>
 	<bindings>
 		<select produces="XML">
