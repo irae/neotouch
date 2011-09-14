@@ -35,3 +35,8 @@ header, footer				{ padding:5px; background:#F1F1F1; color:#666; }
 .col-2								{ left:320px; }
 .cols-3								{ width:930px; }
 .col-3								{ left:630px; }
+
+/* controls */
+.controls							{ position:absolute; width:150px; bottom:0; right:-100px; padding:5px 15px; z-index:9; }
+.controls button			{ padding:15px; margin:0 0 10px 0; font-size:22px; text-shadow:1px 1px 2px #666; background:white; color:black; box-shadow:2px 2px 4px #CCC; border:1px solid transparent; border-radius:5px; }
+.controls button:disabled{ color:#CCC; text-shadow:none; }

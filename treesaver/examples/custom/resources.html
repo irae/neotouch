@@ -3,6 +3,16 @@
 <body>
 	<div class="chrome">
 		<div class="viewer">
+			<div class="controls">
+				<div class="pagewidth">
+					<button class="prev">&#9664;</button>
+					<span class="pagenumbers"><br>
+						<!-- <span data-bind="pagenumber">1</span> /
+						<span data-bind="pagecount">5</span> -->
+					</span>
+					<button class="next">&#9658;</button>
+				</div>
+			</div>
 		</div><!-- /.viewer -->
 	</div><!-- /.chrome -->
 
@@ -42,10 +52,10 @@
 					{{/title}}
 				</header>
 
-	      <div class="container cols-2" data-sizes="title double"></div>
-	      <div class="column"></div>
-	      <div class="container col-2" data-sizes="single"></div>
-	      <div class="column col-2"></div>
+				<div class="container cols-2" data-sizes="title double"></div>
+				<div class="column"></div>
+				<div class="container col-2" data-sizes="single"></div>
+				<div class="column col-2"></div>
 
 				<footer>
 					{{#publication}}
