@@ -211,31 +211,56 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author: daniel filho, fabio dan & irae carvalho
    ========================================================================== */
-	*											{ font-family:"Varela Round"; }
-	body									{ background:#FFF; }
+	*											{ font-family:"Varela Round", sans-serif; }
+	body									{ background:#FFF; margin:0; padding:0; }
 	header								{ position:fixed; top:0; width:200px; height:100px; text-align:center; background:#FFF; }
 	header h1							{ padding-top:20px; }
+	header h1 a,
+	header h1 a:visited		{ text-decoration:none; color:#333; }
 
 	menu									{ position:fixed; top:100px; width:200px; padding:0; margin:0; background:#FFF; }
 	menu li								{ list-style:none outside; padding:0; margin:0; }
-	menu li a							{ display:block; list-style:none; padding:10px 10px; letter-spacing:1px; text-transform:uppercase; text-decoration:none; color:#FFF; }
-	menu a.i1							{ background:rgba(0, 0, 0, .3); }
-	menu a.i2							{ background:rgba(0, 0, 0, .5); }
-	menu a.i3							{ background:rgba(0, 0, 0, .7); }
-	menu a.i4							{ background:rgba(0, 0, 0, .9); }
+	menu li a,
+	menu li a:visited			{ display:block; list-style:none; padding:10px 10px; letter-spacing:1px; text-transform:uppercase; text-decoration:none; color:#FFF; }
+	menu li a:hover				{ color:rgb(200,0,0); 
+													-webkit-transition: all .2s linear;
+													   -moz-transition: all .2s linear;
+													     -o-transition: all .2s linear;
+													    -ms-transition: all .2s linear;
+													        transition: all .2s linear;
+	}
+	menu a.what						{ background:rgba(0, 0, 0, .3); }
+	menu a.how						{ background:rgba(0, 0, 0, .5); }
+	menu a.use						{ background:rgba(0, 0, 0, .7); }
+	menu a.credits				{ background:rgba(0, 0, 0, .9); }
 
 	h1, h2, h3, h4				{ font-weight:bold; text-transform:uppercase; color:#333; }
 	h1 span, h2 span
 	h3 span, h4 span			{ color:#CCC; }
 
-	section								{ width:700px; margin:20px 0 0 230px; padding:20px; border:1px solid #FFF; background:#FFF; }
-	p.slogan							{ margin-top:-10px; font-size:120px; line-height:120px; text-transform:lowercase; }
-	p.slogan span					{ color:rgb(200,0,0); letter-spacing:30px; }
+	.areas								{ padding:0; background:#FFF; }
+	.areas section				{ padding:0 0 0 260px; margin:0; }
+
+	section.home					{ background:#FFF; }
+	.home p								{ font-family:"Varela Round"; }
+	.home p.slogan				{ margin-top:50px; font-size:120px; line-height:120px; text-transform:lowercase; }
+	.home p.slogan span		{ color:rgb(200,0,0); letter-spacing:30px; }
+	
+	section.use p,
+	section.credits p			{ color:#CCC; }
+
+	section.what					{ background:rgba(0, 0, 0, .3); }
+	section.how						{ background:rgba(0, 0, 0, .5); }
+	section.use						{ background:rgba(0, 0, 0, .7); }
+	section.credits				{ background:rgba(0, 0, 0, .9); }
+
+	section p							{ display:block; margin:0; padding-top:40px; font:normal 22px "Coustard", serif; letter-spacing:1px; }
 
 
 
 
-
+/*	* { background:rgba(255,0,0,.3); }
+*/
 
 /* ==|== media queries ======================================================
    PLACEHOLDER Media Queries for Responsive Design.
