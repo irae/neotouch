@@ -1,0 +1,44 @@
+/**
+* Section colouring
+*/
+.none h1 {
+	color:black;
+}
+
+/**
+* Content fields
+*/
+header {
+	position:absolute;
+	top:0px;
+	background-color:black;
+	color:white;
+	width:100%;
+}
+
+footer {
+	position:absolute;
+	bottom:0px;
+	background-color:LightGray;
+	color:DarkGray;
+	width:100%;
+}
+
+
+
+
+/* daniel */
+*											{ font-family:sans-serif; line-height:1em; }
+body									{ background:transparent url('images/bg1.jpg'); }
+.viewer .grid					{ border:0; box-shadow:1px 1px 5px #666; background:#FFF; }
+h1										{ padding:20px; }
+li a									{ color:#666; text-decoration:none; }
+li a:hover						{ text-decoration:underline; }
+header, footer				{ padding:5px; background:#F1F1F1; color:#666; }
+.world-news h1				{ border-left:5px solid red; }
+.world-news header		{ background:rgba(255,0,0,.1); }
+.local-news h1				{ border-left:5px solid yellow; }
+.local-news header		{ background:rgba(255,255,0,.1); }
+.sports h1						{ border-left:5px solid green; }
+.sports header				{ background:rgba(0,255,0,.1); }
+.column								{ top:40px; bottom:40px; }
