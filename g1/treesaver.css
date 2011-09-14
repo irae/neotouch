@@ -38,7 +38,7 @@
 }
 
 /* Fixing photos size issue */
-html .column .foto img { max-width: 300px !important; height: auto !important; }
+/*html .column .foto img { max-width: 300px !important; height: auto !important; }*/
 
 /*  */
 html .column .video,
