@@ -4,7 +4,7 @@
   ?>
 
     <article>
-      <h1>Table Of Contents</h1>
+      <h1>Globo.com Ciência e Saúde</h1>
     </article>
 
   <?php
