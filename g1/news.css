@@ -1,0 +1,42 @@
+/**
+* Section colouring
+*/
+*											{ font-family:sans-serif; line-height:1em; }
+body									{ background:transparent url('images/bg1.jpg'); }
+.viewer .grid					{ border:0; box-shadow:1px 1px 5px #666; background:#FFF; opacity:0.3; }
+#currentPage					{ opacity:1;
+												-webkit-transition: all .3s ease-in-out;
+												   -moz-transition: all .3s ease-in-out;
+												     -o-transition: all .3s ease-in-out;
+												    -ms-transition: all .3s ease-in-out;
+												        transition: all .3s ease-in-out;
+												 -webkit-transform: translateZ(0);
+												    -moz-transform: translateZ(0);
+												      -o-transform: translateZ(0);
+												     -ms-transform: translateZ(0);
+												         transform: translateZ(0);
+											}
+h1										{ padding:20px; }
+.none h1							{ color:black; }
+li a									{ color:#666; text-decoration:none; }
+li a:hover						{ text-decoration:underline; }
+header								{ position:absolute; top:0px; background-color:black; color:white; width:100%; }
+footer								{ position:absolute; bottom:0px; background-color:LightGray; color:DarkGray; width:100%; }
+header, footer				{ padding:5px; background:#F1F1F1; color:#666; }
+.world-news h1				{ border-left:5px solid red; }
+.world-news header		{ background:rgba(255,0,0,.1); }
+.local-news h1				{ border-left:5px solid yellow; }
+.local-news header		{ background:rgba(255,255,0,.1); }
+.sports h1						{ border-left:5px solid green; }
+.sports header				{ background:rgba(0,255,0,.1); }
+.column								{ width:290px; top:40px; bottom:40px; }
+
+.cols-2								{ width:620px; }
+.col-2								{ left:320px; }
+.cols-3								{ width:930px; }
+.col-3								{ left:630px; }
+
+/* controls */
+.controls							{ position:absolute; width:150px; bottom:0; right:-100px; padding:5px 15px; z-index:9; }
+.controls button			{ padding:15px; margin:0 0 10px 0; font-size:22px; text-shadow:1px 1px 2px #666; background:white; color:black; box-shadow:2px 2px 4px #CCC; border:1px solid transparent; border-radius:5px; }
+.controls button:disabled{ color:#CCC; text-shadow:none; }
