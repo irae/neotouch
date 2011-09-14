@@ -15,11 +15,15 @@ if(isset($_GET['location'])){
   // Convert JSON to PHP object
   $phpObj =  json_decode($json);
   
+  $body = $phpObj->query->results->result->body;
+  
+  $body = preg_replace("/<script.*?>.*?<\/script>/imxs", "", $body);
+  
   require('head.php');
   ?>
     <article>
       <h1><?php echo $phpObj->query->results->result->title; ?></h1>
-      <?php echo $phpObj->query->results->result->body; ?>
+      <?php echo $body; ?>
     </article>
   <?php
   
