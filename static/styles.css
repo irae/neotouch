@@ -218,22 +218,22 @@ td { vertical-align: top; }
 	header h1 a,
 	header h1 a:visited		{ text-decoration:none; color:#333; }
 
-	menu									{ position:fixed; top:100px; width:200px; padding:0; margin:0; background:#FFF; }
-	menu li								{ list-style:none outside; padding:0; margin:0; }
-	menu li a,
-	menu li a:visited			{ display:block; list-style:none; padding:10px 10px; letter-spacing:1px; text-transform:uppercase; text-decoration:none; color:#FFF; }
-	menu li a:hover				{ cursor:pointer; color:rgb(200,0,0);
+	nav										{ position:fixed; top:100px; width:200px; padding:0; margin:0; background:#FFF; }
+	nav li								{ list-style:none outside; padding:0; margin:0; }
+	nav li a,
+	nav li a:visited			{ display:block; list-style:none; padding:10px 10px; letter-spacing:1px; text-transform:uppercase; text-decoration:none; color:#FFF; }
+	nav li a:hover				{ cursor:pointer; color:rgb(200,0,0);
 													-webkit-transition: all .2s linear;
 													   -moz-transition: all .2s linear;
 													     -o-transition: all .2s linear;
 													    -ms-transition: all .2s linear;
 													        transition: all .2s linear;
 	}
-	menu a.what						{ background:rgba(0, 0, 0, .3); }
-	menu a.how						{ background:rgba(0, 0, 0, .5); }
-	menu a.use						{ background:rgba(0, 0, 0, .7); }
-	menu a.credits				{ background:rgba(0, 0, 0, .9); }
-	menu a:active					{ padding-left:20px; }
+	nav a.what						{ background:rgba(0, 0, 0, .3); }
+	nav a.how							{ background:rgba(0, 0, 0, .5); }
+	nav a.use							{ background:rgba(0, 0, 0, .7); }
+	nav a.credits					{ background:rgba(0, 0, 0, .9); }
+	nav a:active					{ padding-left:20px; }
 
 	h1, h2, h3, h4				{ font-weight:bold; text-transform:uppercase; color:#333; }
 	h1 span, h2 span
