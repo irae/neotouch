@@ -36,3 +36,6 @@
   bottom: 5px;
   left: 5px;
 }
+
+/* Fixing photos size issue */
+html .foto img { max-width: 300px !important; height: auto !important; }
