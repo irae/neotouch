@@ -366,3 +366,5 @@ td { vertical-align: top; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }
+
+.sc1 { border: solid 4px #000; border-radius: 4px; margin: 30px 0 0 0; }
