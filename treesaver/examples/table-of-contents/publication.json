@@ -1,0 +1,10 @@
+{
+  "title": "Table of Contents Example",
+  "author": "Bram Stein",
+  "contents": [
+    "index.html",
+    "one.html",
+    "two.html",
+    "three.html"
+  ]
+}
