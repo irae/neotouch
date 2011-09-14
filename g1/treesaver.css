@@ -36,3 +36,14 @@
   bottom: 5px;
   left: 5px;
 }
+
+/* Fixing photos size issue */
+html .column .foto img { max-width: 300px !important; height: auto !important; }
+
+/*  */
+html .column .video,
+html .column .flash,
+html .column object,
+html .column embed,
+html .column .lista-de-entidades,
+html .column .saibamais { display: none !important; }
