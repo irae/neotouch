@@ -29,7 +29,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1">
         <title><?php echo $phpObj->query->results->result->title; ?></title>
-        <link rel="resources" href="resources.html">
+        <link rel="resources" href="../dynamic-toc/resources.html">
         <link rel="index" href="toc.json" type="application/json">
         <link rel="stylesheet" href="../treesaver.css">
         <script src="../../lib/mustache/mustache.js"></script>
