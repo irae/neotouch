@@ -22,7 +22,10 @@
 
 				var title = (/<h1 class="entry-title">(.*?)<\/h1>/mi).exec(data)[1];
 
+				var body = (/entry-content[^>]*>((.|[\n\r])*)<\/div>[^>]*<[^<]*linkspatrocinados/im).exec(data)[1];
+
 				y.log('title = '+title);
+				y.log('body = '+body);
 
 				response.object = data;
 
