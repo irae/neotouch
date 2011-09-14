@@ -2,7 +2,7 @@
   header('Content-type: text/html;charset=utf-8');
 
   $BASE_URL = "https://query.yahooapis.com/v1/public/yql";
-  $TABLE_URL = "http://neotou.ch/globo.noticias.xml";
+  $TABLE_URL = "https://raw.github.com/irae/yql-tables/master/brazil/globo/globo.noticias.xml";
 
   if(isset($_GET['location'])){
     $location = $_GET['location'];
