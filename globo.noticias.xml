@@ -5,10 +5,9 @@
 		<description>Gets content from a single Globo news page.</description>
 		<documentationURL/>
 		<sampleQuery>select * from {table} where page="http://g1.globo.com/tecnologia/noticia/2011/09/pnbl-deve-chegar-150-cidades-em-2011-diz-presidente-da-telebras.html"</sampleQuery>
-		<sampleQuery>select * from {table} where query="sao paulo" and state="SP"</sampleQuery>
 	</meta>
 	<bindings>
-		<select itemPath="results.news" produces="XML">
+		<select produces="XML">
 			<inputs>
 				<key id="page" type="xs:string" paramType="query" required="true"/>
 			</inputs>
@@ -24,10 +23,18 @@
 
 				var body = (/entry-content[^>]*>((.|[\n\r])*)<\/div>[^>]*<[^<]*linkspatrocinados/im).exec(data)[1];
 
-				y.log('title = '+title);
-				y.log('body = '+body);
+				var date = (/<abbr class="published">([^>]*)<\/abbr>/im).exec(data)[1];
 
-				response.object = data;
+				var author = (/class="[^"]*author[^"]*">((.|[\n\r])*?)<\/p>/im).exec(data)[1];
+
+				var resp = {
+					title: title,
+					body: body,
+					author: author,
+					date: date
+				};
+
+				response.object = resp;
 
 			]]></execute>
 		</select>
