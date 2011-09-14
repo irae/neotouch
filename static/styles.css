@@ -298,6 +298,11 @@ td { vertical-align: top; }
 	}
 	section.credits ul		{ margin-top:30px; }
 
+/* The same as clearfix, but directly on sections */
+section:before,
+section:after {content: ".";display: block;height: 0;overflow: hidden;}
+section:after {clear: both;}
+section {zoom: 1;}
 
 /*	* { background:rgba(255,0,0,.3); }
 */
@@ -341,11 +346,15 @@ td { vertical-align: top; }
 .invisible { visibility: hidden; }
 
 /* Contain floats: h5bp.com/q */
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { *zoom: 1; }
-
-
+.clearfix:before,
+.clearfix:after {
+  content: ".";    
+  display: block;    
+  height: 0;    
+  overflow: hidden;	
+}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1;}
 
 /* ==|== print styles =======================================================
    Print styles.
