@@ -244,7 +244,7 @@ td { vertical-align: top; }
 
 	section.home					{ background:#FFF; }
 	.home p								{ font-family:"Varela Round"; }
-	.home p.slogan				{ margin-top:30px; font-size:120px; line-height:120px; text-transform:lowercase; }
+	.home p.slogan				{ margin-top:20px; font-size:100px; line-height:100px; text-transform:lowercase; }
 	.home p.slogan span		{ color:rgb(200,0,0); letter-spacing:30px; }
 
 	section.use p,
@@ -255,7 +255,7 @@ td { vertical-align: top; }
 	section.use						{ background:rgba(0, 0, 0, .7); }
 	section.credits				{ background:rgba(0, 0, 0, .9); }
 
-	section p							{ display:block; margin:0; padding-top:40px; font:normal 28px "Coustard", serif; letter-spacing:1px; }
+	section p							{ display:block; margin:0; padding-top:40px; font:normal 22px "Coustard", serif; letter-spacing:1px; }
 
 	section.use 
 		.bookmarklet a			{ display:block; width:150px; padding:10px; font:normal 16px "Varela Round", sans-serif; border:1px solid #333; border-radius:5px; box-shadow:0 0 4px #CCC; text-align:center; color:#333; text-shadow:0 0 1px #CCC; text-decoration:none;
@@ -379,4 +379,5 @@ section {zoom: 1;}
 .sc1 { border: solid 4px #000; border-radius: 4px; float: left; width: 632px; }
 .sc2 { margin: 0 0 0 30px; float: left; width: 220px; }
 
-.screenshots { padding: 30px 0 0 0; }
+.screenshots { padding: 20px 0 0 0; }
+.screenshots img {max-height:500px;max-width:700px;padding-bottom:20px;}
