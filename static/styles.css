@@ -238,6 +238,11 @@ td { vertical-align: top; }
 	h1, h2, h3, h4				{ font-weight:bold; text-transform:uppercase; color:#333; }
 	h1 span, h2 span
 	h3 span, h4 span			{ color:#CCC; }
+	section a,
+	section a:visited,
+	section a:active,
+	section a:hover				{color:rgb(200,0,0);;text-decoration:none}
+	section a:hover				{color:rgb(240,0,0);;}
 
 	.areas								{ padding:0; background:#FFF; }
 	.areas section				{ padding:0 30px 0 260px; }
